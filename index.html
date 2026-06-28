@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manta | ผลิตภัณฑ์สุขภาพสำหรับผู้ชาย | เซน ไบโอเทค</title>
+  <meta name="description" content="Manta ผลิตภัณฑ์ดูแลสุขภาพผู้ชายคุณภาพสูง ผลิตโดย บริษัท เซน ไบโอเทค จำกัด ได้มาตรฐาน อย. เลขที่ 13-1-158959-5-1531 สั่งซื้อผ่าน LINE, Shopee, Facebook">
+  <link rel="canonical" href="https://mantamen.com/">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="Manta, ผลิตภัณฑ์ผู้ชาย, สุขภาพผู้ชาย, Manta Performance, เซน ไบโอเทค, อาหารเสริมผู้ชาย">
+  <meta property="og:title" content="Manta | ผลิตภัณฑ์สุขภาพสำหรับผู้ชาย">
+  <meta property="og:description" content="Manta ผลิตภัณฑ์ดูแลสุขภาพผู้ชายคุณภาพสูง ได้มาตรฐาน อย. สั่งซื้อผ่าน LINE, Shopee, Facebook">
+  <meta property="og:url" content="https://mantamen.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://mantamen.com/img/logo/Manta_logo2.png">
+  <meta property="og:locale" content="th_TH">
+  <meta property="og:site_name" content="Manta">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Manta | ผลิตภัณฑ์สุขภาพสำหรับผู้ชาย">
+  <meta name="twitter:description" content="Manta ผลิตภัณฑ์ดูแลสุขภาพผู้ชายคุณภาพสูง ได้มาตรฐาน อย.">
+  <meta name="twitter:image" content="https://mantamen.com/img/logo/Manta_logo2.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Manta",
+    "alternateName": "Manta for Men",
+    "url": "https://mantamen.com",
+    "logo": "https://mantamen.com/img/logo/Manta_logo2.png",
+    "description": "ผลิตภัณฑ์ดูแลสุขภาพผู้ชายคุณภาพสูง ผลิตโดย บริษัท เซน ไบโอเทค จำกัด",
+    "telephone": "02-399-0099",
+    "address": {"@type": "PostalAddress", "addressCountry": "TH"},
+    "sameAs": ["https://www.facebook.com/mantamen","https://www.tiktok.com/@mantamen","https://shopee.co.th/mantamen"]
+  }
+  </script>
+
+  <style>
+    /* ─── RESET & BASE ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:         #f8f9f8;
+      --bg2:        #ffffff;
+      --bg3:        #f0f4f1;
+      --green:      #2d7a4f;
+      --green-lt:   #3ea06a;
+      --green-dk:   #1e5435;
+      --grad:       linear-gradient(135deg, #2d7a4f 0%, #3ea06a 50%, #5ab87f 100%);
+      --grad-hero:  linear-gradient(135deg, #1e5435 0%, #2d7a4f 40%, #3ea06a 100%);
+      --white:      #ffffff;
+      --text:       #1a2e22;
+      --gray:       #6b7c72;
+      --gray-lt:    #a8b8af;
+      --border:     rgba(45,122,79,0.18);
+      --border-lt:  rgba(45,122,79,0.08);
+      --nav-h:      70px;
+      --radius:     6px;
+      --transition: 0.3s ease;
+      --shadow:     0 4px 24px rgba(45,122,79,0.12);
+      --shadow-lg:  0 12px 40px rgba(45,122,79,0.18);
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', 'Noto Sans Thai', Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    ul { list-style: none; }
+
+    /* ─── SCROLLBAR ─── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--green); border-radius: 3px; }
+
+    /* ─── HEADER / NAV ─── */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      height: var(--nav-h);
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 2px 16px rgba(45,122,79,0.08);
+    }
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .nav-logo img { height: 44px; width: auto; object-fit: contain; }
+    .nav-logo .logo-placeholder {
+      height: 44px;
+      display: flex;
+      align-items: center;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+    .nav-menu a {
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--gray);
+      border-radius: var(--radius);
+      transition: color var(--transition), background var(--transition);
+    }
+    .nav-menu a:hover,
+    .nav-menu a[aria-current="page"] {
+      color: var(--green);
+      background: var(--border-lt);
+    }
+
+    .nav-social {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .nav-social a {
+      width: 34px; height: 34px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      transition: border-color var(--transition), background var(--transition), box-shadow var(--transition);
+      overflow: hidden;
+    }
+    .nav-social a:hover {
+      border-color: var(--green);
+      background: var(--border-lt);
+      box-shadow: var(--shadow);
+    }
+    .nav-social img { width: 20px; height: 20px; object-fit: contain; }
+    .nav-social .icon-placeholder {
+      width: 20px; height: 20px;
+      border-radius: 3px;
+      font-size: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800;
+    }
+
+    /* Hamburger */
+    .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--text); border-radius: 2px; transition: var(--transition); }
+
+    /* ─── HERO ─── */
+    .hero {
+      padding-top: var(--nav-h);
+      position: relative;
+      overflow: hidden;
+      background: var(--grad-hero);
+    }
+    /* subtle mesh overlay */
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 70% 60% at 80% 50%, rgba(94,200,140,0.15) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 80% at 10% 80%, rgba(30,84,53,0.4) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 24px 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 60px;
+      min-height: 560px;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-text { position: relative; z-index: 2; }
+    .hero-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.9);
+      border: 1px solid rgba(255,255,255,0.3);
+      background: rgba(255,255,255,0.1);
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: clamp(32px, 4.5vw, 52px);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+    h1 em {
+      font-style: normal;
+      color: #a8edbc;
+    }
+    .hero-desc {
+      font-size: 15px;
+      color: rgba(255,255,255,0.75);
+      max-width: 420px;
+      margin-bottom: 36px;
+      line-height: 1.85;
+    }
+    .hero-cta {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 28px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .btn-green {
+      background: #ffffff;
+      color: var(--green-dk);
+      border: 1px solid #ffffff;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+    .btn-green:hover {
+      background: #e8f5ee;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    }
+    .btn-outline {
+      background: transparent;
+      color: #ffffff;
+      border: 1px solid rgba(255,255,255,0.5);
+    }
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.15);
+      border-color: #ffffff;
+    }
+
+    /* Hero slideshow */
+    .hero-visual { position: relative; }
+    .hero-slideshow {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.2);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero-slideshow .slide {
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.8s ease;
+    }
+    .hero-slideshow .slide.active { opacity: 1; }
+    .hero-slideshow .slide-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 12px;
+      color: rgba(255,255,255,0.5);
+      font-size: 13px;
+    }
+    .hero-slideshow .slide-placeholder .ph-icon {
+      width: 80px; height: 80px;
+      border: 2px solid rgba(255,255,255,0.2);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px;
+      color: rgba(255,255,255,0.7);
+    }
+    .slide-dots {
+      display: flex;
+      gap: 6px;
+      justify-content: center;
+      margin-top: 14px;
+    }
+    .dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.3);
+      cursor: pointer;
+      transition: background var(--transition);
+    }
+    .dot.active { background: #ffffff; }
+
+    /* bottom wave */
+    .hero-wave {
+      position: relative;
+      line-height: 0;
+      background: var(--grad-hero);
+    }
+    .hero-wave svg { display: block; width: 100%; }
+
+    /* ─── SECTION COMMONS ─── */
+    section { padding: 80px 24px; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-header { text-align: center; margin-bottom: 52px; }
+    .section-eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-size: clamp(24px, 3vw, 36px);
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      margin-bottom: 14px;
+    }
+    .section-desc {
+      font-size: 15px;
+      color: var(--gray);
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    /* ─── PRODUCT SECTION ─── */
+    .products { background: var(--bg); }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+    .product-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+      cursor: pointer;
+    }
+    .product-card:hover {
+      border-color: var(--green);
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+    .product-card img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+    .product-card .card-ph {
+      width: 100%;
+      aspect-ratio: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: var(--gray);
+      font-size: 12px;
+      background: var(--bg3);
+    }
+    .product-card .card-ph-icon {
+      font-size: 32px;
+      color: var(--green);
+      opacity: 0.5;
+    }
+
+    /* ─── FEATURES ─── */
+    .features {
+      background: linear-gradient(180deg, var(--bg) 0%, #eaf3ed 100%);
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .feature-card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px 28px;
+      background: var(--white);
+      box-shadow: 0 2px 12px rgba(45,122,79,0.06);
+      transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+    }
+    .feature-card:hover {
+      border-color: var(--green-lt);
+      box-shadow: var(--shadow);
+      transform: translateY(-4px);
+    }
+    .feature-icon { font-size: 32px; margin-bottom: 16px; }
+    .feature-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+    .feature-desc { font-size: 14px; color: var(--gray); line-height: 1.75; }
+
+    /* ─── SHOP SECTION ─── */
+    .our-shop {
+      background: var(--grad);
+      position: relative;
+      overflow: hidden;
+    }
+    .our-shop::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 80% at 90% 20%, rgba(255,255,255,0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .our-shop .section-eyebrow { color: rgba(255,255,255,0.7); }
+    .our-shop h2 { color: #ffffff; }
+    .our-shop .section-desc { color: rgba(255,255,255,0.75); }
+    .shop-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    .shop-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      padding: 28px 20px;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(8px);
+      transition: background var(--transition), transform var(--transition), border-color var(--transition);
+      text-align: center;
+    }
+    .shop-card:hover {
+      background: rgba(255,255,255,0.22);
+      border-color: rgba(255,255,255,0.6);
+      transform: translateY(-6px);
+    }
+    .shop-card img { width: 48px; height: 48px; object-fit: contain; }
+    .shop-card .shop-icon-ph {
+      width: 48px; height: 48px;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; font-weight: 900;
+      color: #fff;
+    }
+    .shop-card span { font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.85); letter-spacing: 0.04em; }
+    .shop-card:hover span { color: #ffffff; }
+
+    /* ─── CONTACT ─── */
+    .contact { background: var(--bg); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    .contact-block {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      background: var(--white);
+      box-shadow: 0 2px 12px rgba(45,122,79,0.06);
+    }
+    h3 {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 16px;
+    }
+    .contact-block p { font-size: 14px; color: var(--gray); margin-bottom: 8px; }
+    .contact-block strong { color: var(--text); }
+    .contact-block a { color: var(--green); transition: color var(--transition); }
+    .contact-block a:hover { color: var(--green-lt); }
+    .contact-logo-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 24px;
+    }
+    .contact-logo-wrap img { height: 50px; width: auto; object-fit: contain; }
+    .logo-ph-nxg {
+      height: 50px;
+      display: flex; align-items: center;
+      font-size: 20px; font-weight: 900;
+      letter-spacing: 0.1em;
+      color: var(--gray-lt);
+    }
+
+    /* ─── DIVIDER ─── */
+    .green-line {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--green-lt), transparent);
+      border: none;
+      opacity: 0.4;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--text);
+      border-top: 1px solid rgba(45,122,79,0.3);
+      padding: 48px 24px;
+      text-align: center;
+    }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-logo { margin-bottom: 20px; }
+    .footer-logo img { height: 36px; width: auto; margin: 0 auto; }
+    .footer-logo .logo-ph {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-align: center;
+    }
+    .footer-nav {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+    .footer-nav a {
+      font-size: 12px;
+      color: rgba(255,255,255,0.45);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: color var(--transition);
+    }
+    .footer-nav a:hover { color: var(--green-lt); }
+    .footer-social {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 28px;
+    }
+    .footer-social a {
+      width: 36px; height: 36px;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      transition: border-color var(--transition), background var(--transition);
+    }
+    .footer-social a:hover { border-color: var(--green-lt); background: rgba(45,122,79,0.2); }
+    .footer-social img { width: 18px; height: 18px; object-fit: contain; }
+    .footer-copy { font-size: 12px; color: rgba(255,255,255,0.35); line-height: 1.9; }
+    .footer-copy a { color: rgba(255,255,255,0.45); transition: color var(--transition); }
+    .footer-copy a:hover { color: var(--green-lt); }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 40px; padding: 60px 24px 50px; text-align: center; }
+      .hero-desc { margin-left: auto; margin-right: auto; }
+      .hero-cta { justify-content: center; }
+      .product-grid { grid-template-columns: repeat(3, 1fr); }
+      .features-grid { grid-template-columns: 1fr 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .nav-menu { display: none; }
+      .nav-menu.open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: var(--nav-h); left: 0; right: 0;
+        background: rgba(255,255,255,0.98);
+        padding: 24px;
+        gap: 4px;
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow);
+      }
+      .nav-toggle { display: flex; }
+      .nav-social { display: none; }
+      .product-grid { grid-template-columns: repeat(2, 1fr); }
+      .features-grid { grid-template-columns: 1fr; }
+      .shop-grid { grid-template-columns: repeat(2, 1fr); }
+      h1 { font-size: 30px; }
+    }
+
+    /* ─── FADE IN ─── */
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+  </style>
+</head>
+
+<body>
+
+<!-- ═══════════════════════════════
+     HEADER
+════════════════════════════════ -->
+<header role="banner">
+  <nav role="navigation" aria-label="เมนูหลัก">
+
+    <div class="nav-logo">
+      <a href="/" aria-label="กลับหน้าแรก Manta">
+        <!-- ใส่รูปจริง: <img src="img/logo/Manta_logo2.png" alt="Manta โลโก้" width="140" height="44"> -->
+        <div class="logo-placeholder">MANTA</div>
+      </a>
+    </div>
+
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="/" aria-current="page">Home</a></li>
+      <li><a href="/manta-performance">Manta Performance</a></li>
+      <li><a href="/mens-topics">Men's Topics</a></li>
+      <li><a href="/about">About</a></li>
+    </ul>
+
+    <div class="nav-social" aria-label="ช่องทางสั่งซื้อ">
+      <a href="https://lin.ee/mantamen" target="_blank" rel="noopener noreferrer" aria-label="LINE">
+        <!-- <img src="img/logo/LINE.png" alt="LINE"> -->
+        <div class="icon-placeholder" style="background:#06c755;">L</div>
+      </a>
+      <a href="https://www.facebook.com/mantamen" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <!-- <img src="img/logo/FACEBOOK_2.png" alt="Facebook"> -->
+        <div class="icon-placeholder" style="background:#1877f2;">f</div>
+      </a>
+      <a href="https://www.tiktok.com/@mantamen" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <!-- <img src="img/logo/Tik_Tok.png" alt="TikTok"> -->
+        <div class="icon-placeholder" style="background:#010101;">T</div>
+      </a>
+      <a href="https://shopee.co.th/mantamen" target="_blank" rel="noopener noreferrer" aria-label="Shopee">
+        <!-- <img src="img/logo/SHOPEE_WHITE.png" alt="Shopee"> -->
+        <div class="icon-placeholder" style="background:#ee4d2d;">S</div>
+      </a>
+    </div>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="เปิด/ปิดเมนู" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+  </nav>
+</header>
+
+
+<!-- ═══════════════════════════════
+     MAIN
+════════════════════════════════ -->
+<main role="main">
+
+  <!-- ── HERO ── -->
+  <section class="hero" aria-label="แนะนำ Manta">
+    <div class="hero-inner">
+
+      <div class="hero-text fade-in">
+        <div class="hero-badge">Manta for Men</div>
+        <h1>สุขภาพที่ดีกว่า<br>เริ่มจาก <em>Manta</em></h1>
+        <p class="hero-desc">
+          ผลิตภัณฑ์ดูแลสุขภาพผู้ชายคุณภาพสูง<br>
+          ผลิตโดย บริษัท เซน ไบโอเทค จำกัด<br>
+          ได้มาตรฐาน อย. เลขที่ 13-1-158959-5-1531
+        </p>
+        <div class="hero-cta">
+          <a href="/manta-performance" class="btn btn-green">ดูสินค้า</a>
+          <a href="#shop" class="btn btn-outline">สั่งซื้อเลย</a>
+        </div>
+      </div>
+
+      <div class="hero-visual fade-in">
+        <div class="hero-slideshow" aria-label="ภาพสินค้า Manta" id="slideshow">
+          <!--
+            ใส่รูปจริง แบบนี้:
+            <img class="slide active" src="img/home/P1SlideShow_03.jpg" alt="Manta Performance ผลิตภัณฑ์สุขภาพผู้ชาย" width="600" height="450">
+            <img class="slide" src="img/home/P1SlideShow_02.png" alt="Manta สูตรพิเศษเพื่อสุขภาพผู้ชาย" width="600" height="450">
+          -->
+          <div class="slide-placeholder slide active">
+            <div class="ph-icon">◈</div>
+            <span>Manta Performance</span>
+          </div>
+        </div>
+        <div class="slide-dots" id="slide-dots">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- wave transition -->
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 C360,60 1080,60 1440,0 L1440,60 L0,60 Z" fill="#f8f9f8"/>
+    </svg>
+  </div>
+
+  <!-- ── PRODUCTS ── -->
+  <section class="products" aria-labelledby="products-heading">
+    <div class="section-inner">
+      <div class="section-header fade-in">
+        <p class="section-eyebrow">สินค้าของเรา</p>
+        <h2 id="products-heading">Manta Performance</h2>
+        <p class="section-desc">ผลิตภัณฑ์ดูแลสุขภาพผู้ชายที่ผ่านการรับรองคุณภาพ</p>
+      </div>
+
+      <div class="product-grid">
+        <!-- ใส่รูปจริง: <img src="img/home/P1_L01.png" alt="..."> -->
+        <article class="product-card fade-in">
+          <div class="card-ph"><div class="card-ph-icon">①</div><span>Manta 01</span></div>
+        </article>
+        <article class="product-card fade-in">
+          <div class="card-ph"><div class="card-ph-icon">②</div><span>Manta 02</span></div>
+        </article>
+        <article class="product-card fade-in">
+          <div class="card-ph"><div class="card-ph-icon">③</div><span>Manta 03</span></div>
+        </article>
+        <article class="product-card fade-in">
+          <div class="card-ph"><div class="card-ph-icon">④</div><span>Manta 04</span></div>
+        </article>
+        <article class="product-card fade-in">
+          <div class="card-ph"><div class="card-ph-icon">⑤</div><span>Manta 05</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <hr class="green-line">
+
+  <!-- ── WHY MANTA ── -->
+  <section class="features" aria-labelledby="features-heading">
+    <div class="section-inner">
+      <div class="section-header fade-in">
+        <p class="section-eyebrow">ทำไมต้อง Manta</p>
+        <h2 id="features-heading">มาตรฐานที่คุณไว้วางใจได้</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🏆</div>
+          <div class="feature-title">ได้มาตรฐาน อย.</div>
+          <p class="feature-desc">ผ่านการรับรองจากสำนักงานคณะกรรมการอาหารและยา เลขที่ 13-1-158959-5-1531</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🔬</div>
+          <div class="feature-title">วิจัยโดยผู้เชี่ยวชาญ</div>
+          <p class="feature-desc">พัฒนาโดย บริษัท เซน ไบโอเทค จำกัด ด้วยนวัตกรรมและงานวิจัยระดับสูง</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">⚡</div>
+          <div class="feature-title">สูตรพิเศษสำหรับผู้ชาย</div>
+          <p class="feature-desc">ออกแบบมาเพื่อตอบโจทย์สุขภาพผู้ชายโดยเฉพาะ ให้ประสิทธิภาพสูงสุด</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="green-line">
+
+  <!-- ── OUR SHOP ── -->
+  <section class="our-shop" id="shop" aria-labelledby="shop-heading">
+    <div class="section-inner">
+      <div class="section-header fade-in">
+        <p class="section-eyebrow">ช่องทางจำหน่าย</p>
+        <h2 id="shop-heading">OUR SHOP</h2>
+        <p class="section-desc">สั่งซื้อ Manta ได้ง่ายๆ ผ่านทุกช่องทาง</p>
+      </div>
+      <div class="shop-grid">
+        <a href="https://lin.ee/mantamen" target="_blank" rel="noopener noreferrer"
+           class="shop-card fade-in" aria-label="สั่งซื้อผ่าน LINE Shop">
+          <!-- <img src="img/logo/LINE.png" alt="LINE Shop"> -->
+          <div class="shop-icon-ph" style="background:#06c755;">L</div>
+          <span>LINE Shop</span>
+        </a>
+        <a href="https://www.facebook.com/mantamen" target="_blank" rel="noopener noreferrer"
+           class="shop-card fade-in" aria-label="สั่งซื้อผ่าน Facebook">
+          <!-- <img src="img/logo/FACEBOOK_2.png" alt="Facebook"> -->
+          <div class="shop-icon-ph" style="background:#1877f2;">f</div>
+          <span>Facebook</span>
+        </a>
+        <a href="https://www.tiktok.com/@mantamen" target="_blank" rel="noopener noreferrer"
+           class="shop-card fade-in" aria-label="สั่งซื้อผ่าน TikTok Shop">
+          <!-- <img src="img/logo/Tik_Tok.png" alt="TikTok Shop"> -->
+          <div class="shop-icon-ph" style="background:#010101; border: 1px solid #333;">T</div>
+          <span>TikTok Shop</span>
+        </a>
+        <a href="https://shopee.co.th/mantamen" target="_blank" rel="noopener noreferrer"
+           class="shop-card fade-in" aria-label="สั่งซื้อผ่าน Shopee">
+          <!-- <img src="img/logo/SHOPEE_WHITE.png" alt="Shopee"> -->
+          <div class="shop-icon-ph" style="background:#ee4d2d;">S</div>
+          <span>Shopee</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="green-line">
+
+  <!-- ── CONTACT ── -->
+  <section class="contact" id="contact" aria-labelledby="contact-heading">
+    <div class="section-inner">
+      <div class="section-header fade-in">
+        <p class="section-eyebrow">ติดต่อเรา</p>
+        <h2 id="contact-heading">CONTACT</h2>
+      </div>
+      <address class="contact-grid" style="font-style:normal;">
+        <div class="contact-block fade-in">
+          <h3>ผู้ผลิต</h3>
+          <p><strong>บริษัท เซน ไบโอเทค จำกัด</strong></p>
+          <p>เลขที่ใบอนุญาต อย.:<br><strong>13-1-158959-5-1531</strong></p>
+        </div>
+        <div class="contact-block fade-in">
+          <h3>ผู้จัดจำหน่าย</h3>
+          <p><strong>บริษัท เนกซ์ทีฟ โกลบอล จำกัด</strong></p>
+          <p>โทรศัพท์: <a href="tel:+6623990099">02-399-0099</a></p>
+          <div class="contact-logo-wrap" style="margin-top:20px; justify-content:flex-start;">
+            <!-- <img src="img/logo/NXG_Logo.png" alt="Nextive Global โลโก้" height="50"> -->
+            <div class="logo-ph-nxg">NXG</div>
+          </div>
+        </div>
+      </address>
+    </div>
+  </section>
+
+</main>
+
+
+<!-- ═══════════════════════════════
+     FOOTER
+════════════════════════════════ -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+
+    <div class="footer-logo">
+      <!-- <img src="img/logo/Manta_logo2.png" alt="Manta โลโก้"> -->
+      <div class="logo-ph">MANTA</div>
+    </div>
+
+    <nav class="footer-nav" aria-label="เมนู Footer">
+      <a href="/">Home</a>
+      <a href="/manta-performance">Manta Performance</a>
+      <a href="/mens-topics">Men's Topics</a>
+      <a href="/about">About</a>
+    </nav>
+
+    <div class="footer-social" aria-label="Social Media">
+      <a href="https://lin.ee/mantamen" target="_blank" rel="noopener noreferrer" aria-label="LINE">
+        <div class="icon-placeholder" style="background:#06c755;border-radius:3px;width:18px;height:18px;font-size:10px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;">L</div>
+      </a>
+      <a href="https://www.facebook.com/mantamen" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <div class="icon-placeholder" style="background:#1877f2;border-radius:3px;width:18px;height:18px;font-size:10px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;">f</div>
+      </a>
+      <a href="https://www.tiktok.com/@mantamen" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <div class="icon-placeholder" style="background:#010101;border:1px solid #333;border-radius:3px;width:18px;height:18px;font-size:10px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;">T</div>
+      </a>
+      <a href="https://shopee.co.th/mantamen" target="_blank" rel="noopener noreferrer" aria-label="Shopee">
+        <div class="icon-placeholder" style="background:#ee4d2d;border-radius:3px;width:18px;height:18px;font-size:10px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;">S</div>
+      </a>
+    </div>
+
+    <p class="footer-copy">
+      &copy; <span id="year"></span> Manta — บริษัท เซน ไบโอเทค จำกัด<br>
+      ผู้จัดจำหน่าย: บริษัท เนกซ์ทีฟ โกลบอล จำกัด | เลขที่ อย.: 13-1-158959-5-1531<br>
+      โทร: <a href="tel:+6623990099">02-399-0099</a>
+    </p>
+
+  </div>
+</footer>
+
+
+<script>
+  /* ── ปีปัจจุบัน ── */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ── Hamburger menu ── */
+  const toggle = document.getElementById('nav-toggle');
+  const menu   = document.getElementById('nav-menu');
+  toggle.addEventListener('click', function() {
+    const open = menu.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+
+  /* ── Slideshow ── */
+  (function() {
+    const slides = document.querySelectorAll('#slideshow .slide');
+    const dots   = document.querySelectorAll('#slide-dots .dot');
+    if (slides.length < 2) return;
+    let current = 0;
+    function goTo(n) {
+      slides[current].classList.remove('active');
+      dots[current] && dots[current].classList.remove('active');
+      current = (n + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dots[current] && dots[current].classList.add('active');
+    }
+    dots.forEach(function(d, i) { d.addEventListener('click', function() { goTo(i); }); });
+    setInterval(function() { goTo(current + 1); }, 4500);
+  })();
+
+  /* ── Fade-in on scroll ── */
+  (function() {
+    const els = document.querySelectorAll('.fade-in');
+    const io  = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    els.forEach(function(el) { io.observe(el); });
+  })();
+</script>
+
+</body>
+</html>
