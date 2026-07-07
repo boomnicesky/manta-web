@@ -6,174 +6,322 @@
   <title>เกี่ยวกับ Manta | บริษัท เซน ไบโอเทค จำกัด</title>
   <meta name="description" content="รู้จัก Manta และ บริษัท เซน ไบโอเทค จำกัด ผู้ผลิตผลิตภัณฑ์สุขภาพผู้ชายคุณภาพสูง ได้มาตรฐาน อย. จัดจำหน่ายโดย บริษัท เนกซ์ทีฟ โกลบอล จำกัด">
   <link rel="canonical" href="https://mantamen.com/about">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta property="og:title" content="เกี่ยวกับ Manta | บริษัท เซน ไบโอเทค จำกัด">
   <meta property="og:description" content="รู้จัก Manta และ บริษัท เซน ไบโอเทค จำกัด ผู้ผลิตผลิตภัณฑ์สุขภาพผู้ชายคุณภาพสูง">
   <meta property="og:url" content="https://mantamen.com/about">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://mantamen.com/img/logo/Manta_logo2.png">
+  <meta property="og:image" content="https://mantamen.com/picture/web/logo.png">
   <meta property="og:locale" content="th_TH">
+  <meta property="og:site_name" content="Manta">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="เกี่ยวกับ Manta | บริษัท เซน ไบโอเทค จำกัด">
+  <meta name="twitter:description" content="รู้จัก Manta และ บริษัท เซน ไบโอเทค จำกัด ผู้ผลิตผลิตภัณฑ์สุขภาพผู้ชายคุณภาพสูง">
+  <meta name="twitter:image" content="https://mantamen.com/picture/web/logo.png">
+
+  <meta name="theme-color" content="#06231C">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="picture/web/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="picture/web/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="picture/web/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="picture/web/apple-touch-icon.png">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "name": "เกี่ยวกับ Manta",
-    "url": "https://mantamen.com/about",
-    "description": "รู้จัก Manta และ บริษัท เซน ไบโอเทค จำกัด ผู้ผลิตผลิตภัณฑ์สุขภาพผู้ชาย",
-    "mainEntity": {
-      "@type": "Organization",
-      "name": "Manta",
-      "foundingOrganization": {"@type": "Organization", "name": "บริษัท เซน ไบโอเทค จำกัด"},
-      "telephone": "02-399-0099",
-      "address": {"@type": "PostalAddress", "addressCountry": "TH"}
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://mantamen.com/#organization",
+        "name": "Manta",
+        "url": "https://mantamen.com",
+        "logo": {"@type": "ImageObject", "url": "https://mantamen.com/picture/web/logo.png", "width": 900, "height": 300},
+        "foundingOrganization": {"@type": "Organization", "name": "บริษัท เซน ไบโอเทค จำกัด"},
+        "telephone": "02-399-0099",
+        "address": {"@type": "PostalAddress", "addressCountry": "TH"},
+        "sameAs": ["https://www.facebook.com/mantamen","https://www.tiktok.com/@mantamen","https://shopee.co.th/mantamen"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://mantamen.com/#website",
+        "url": "https://mantamen.com",
+        "name": "Manta",
+        "inLanguage": "th",
+        "publisher": { "@id": "https://mantamen.com/#organization" }
+      },
+      {
+        "@type": "AboutPage",
+        "name": "เกี่ยวกับ Manta",
+        "url": "https://mantamen.com/about",
+        "description": "รู้จัก Manta และ บริษัท เซน ไบโอเทค จำกัด ผู้ผลิตผลิตภัณฑ์สุขภาพผู้ชาย",
+        "mainEntity": { "@id": "https://mantamen.com/#organization" }
+      }
+    ]
   }
   </script>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600;700;800&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
   <style>
+    /* ══════════════ RESET & TOKENS ══════════════ */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --bg: #f8f9f8; --bg2: #ffffff; --bg3: #f0f4f1;
-      --green: #2d7a4f; --green-lt: #3ea06a; --green-dk: #1e5435;
-      --grad: linear-gradient(135deg, #2d7a4f 0%, #3ea06a 50%, #5ab87f 100%);
-      --grad-hero: linear-gradient(135deg, #1e5435 0%, #2d7a4f 40%, #3ea06a 100%);
-      --white: #ffffff; --text: #1a2e22; --gray: #6b7c72; --gray-lt: #a8b8af;
-      --border: rgba(45,122,79,0.18); --border-lt: rgba(45,122,79,0.08);
-      --nav-h: 70px; --radius: 6px; --transition: 0.3s ease;
-      --shadow: 0 4px 24px rgba(45,122,79,0.12); --shadow-lg: 0 12px 40px rgba(45,122,79,0.18);
+      --ink:        #101613;
+      --forest-950: #06231C;
+      --forest-900: #0A3128;
+      --forest-800: #0C4536;
+      --forest-600: #146B52;
+      --verdant:    #1E9C74;
+      --verdant-lt: #7AD8AF;
+      --ember:      #D9481E;
+      --ember-lt:   #FF7A46;
+      --gold:       #D6A54A;
+      --paper:      #F3F5EF;
+      --paper-alt:  #EAF0E9;
+      --card:       #FFFFFF;
+      --muted:      #57685E;
+      --muted-lt:   #8B9A91;
+      --line:       rgba(10,40,30,0.13);
+      --line-soft:  rgba(10,40,30,0.07);
+      --nav-h:      74px;
+      --radius:     18px;
+      --radius-sm:  12px;
+      --ease:       0.35s cubic-bezier(.2,.7,.2,1);
+      --shadow:     0 10px 30px rgba(6,35,28,0.10);
+      --shadow-lg:  0 24px 60px rgba(6,35,28,0.22);
+      --font-display: 'Kanit', 'Noto Sans Thai', sans-serif;
+      --font-body:    'IBM Plex Sans Thai', 'Noto Sans Thai', sans-serif;
+      --font-mono:    'IBM Plex Mono', monospace;
     }
     html { scroll-behavior: smooth; }
-    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI','Noto Sans Thai',Arial,sans-serif; font-size: 15px; line-height: 1.7; overflow-x: hidden; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+    }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 15.5px;
+      line-height: 1.75;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      overflow-wrap: break-word;
+    }
     a { color: inherit; text-decoration: none; }
     img { display: block; max-width: 100%; }
     ul { list-style: none; }
-    ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-track { background: var(--bg); }
-    ::-webkit-scrollbar-thumb { background: var(--green); border-radius: 3px; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--paper); }
+    ::-webkit-scrollbar-thumb { background: var(--forest-600); border-radius: 4px; }
 
-    header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; height: var(--nav-h); background: rgba(255,255,255,0.92); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); box-shadow: 0 2px 16px rgba(45,122,79,0.08); }
-    nav { max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-    .logo-placeholder { height: 44px; display: flex; align-items: center; font-size: 22px; font-weight: 800; letter-spacing: 0.12em; background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-    .nav-menu { display: flex; gap: 6px; align-items: center; }
-    .nav-menu a { padding: 8px 14px; font-size: 13px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--gray); border-radius: var(--radius); transition: color var(--transition), background var(--transition); }
-    .nav-menu a:hover, .nav-menu a[aria-current="page"] { color: var(--green); background: var(--border-lt); }
-    .nav-social { display: flex; gap: 10px; align-items: center; }
-    .nav-social a { width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid var(--border); transition: var(--transition); overflow: hidden; }
-    .nav-social a:hover { border-color: var(--green); background: var(--border-lt); }
-    .icon-ph { width: 20px; height: 20px; border-radius: 3px; font-size: 10px; display: flex; align-items: center; justify-content: center; font-weight: 800; }
+    h1, h2, h3, .display { font-family: var(--font-display); }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 11.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+    }
+    .eyebrow::before { content: ''; width: 16px; height: 1px; background: currentColor; opacity: .6; }
+
+    /* ══════════════ LOGO ══════════════ */
+    .brand-logo { display: inline-flex; align-items: center; }
+    .brand-logo img { height: 30px; width: auto; display: block; }
+    .footer-logo .brand-logo img { height: 34px; }
+
+    /* ══════════════ HEADER / NAV ══════════════ */
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      height: var(--nav-h);
+      background: rgba(6,35,28,0.82);
+      backdrop-filter: blur(16px) saturate(1.2);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    nav {
+      max-width: 1240px; margin: 0 auto; padding: 0 28px; height: 100%;
+      display: flex; align-items: center; justify-content: space-between; gap: 24px;
+    }
+    .nav-menu { display: flex; gap: 4px; align-items: center; }
+    .nav-menu a {
+      padding: 9px 15px; font-size: 13px; font-weight: 500; letter-spacing: 0.02em;
+      color: rgba(246,251,248,0.62); border-radius: 30px;
+      transition: color var(--ease), background var(--ease);
+    }
+    .nav-menu a:hover, .nav-menu a[aria-current="page"] { color: #fff; background: rgba(255,255,255,0.08); }
+
+    .nav-social { display: flex; gap: 8px; align-items: center; }
+    .nav-social a {
+      width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;
+      border-radius: 50%; border: 1px solid rgba(255,255,255,0.16);
+      font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: rgba(246,251,248,0.75);
+      transition: border-color var(--ease), background var(--ease), color var(--ease), transform var(--ease);
+    }
+    .nav-social a:hover { border-color: var(--verdant-lt); background: rgba(30,156,116,0.18); color: #fff; transform: translateY(-2px); }
+
     .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
-    .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--text); border-radius: 2px; }
+    .nav-toggle span { display: block; width: 22px; height: 2px; background: #fff; border-radius: 2px; }
 
-    .page-hero { padding-top: var(--nav-h); background: var(--grad-hero); position: relative; overflow: hidden; }
-    .page-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 90% 30%, rgba(94,200,140,0.15) 0%, transparent 60%); pointer-events: none; }
-    .page-hero-inner { max-width: 1200px; margin: 0 auto; padding: 60px 24px 80px; position: relative; z-index: 1; }
-    .breadcrumb { font-size: 13px; color: rgba(255,255,255,0.6); margin-bottom: 16px; }
-    .breadcrumb a { color: rgba(255,255,255,0.6); }
-    .breadcrumb a:hover { color: #fff; }
-    .breadcrumb span { color: rgba(255,255,255,0.3); margin: 0 8px; }
-    h1 { font-size: clamp(28px, 4vw, 44px); font-weight: 800; color: #fff; margin-bottom: 12px; }
-    .hero-sub { font-size: 16px; color: rgba(255,255,255,0.75); max-width: 520px; }
-    .hero-wave { line-height: 0; background: var(--grad-hero); }
-    .hero-wave svg { display: block; width: 100%; }
-
-    section { padding: 70px 24px; }
-    .inner { max-width: 1100px; margin: 0 auto; }
-    .section-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green); margin-bottom: 10px; }
-    h2 { font-size: clamp(22px, 3vw, 32px); font-weight: 800; color: var(--text); margin-bottom: 16px; }
-    p { color: var(--gray); line-height: 1.85; margin-bottom: 16px; }
-
-    /* About grid */
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
-    .about-visual { background: var(--bg3); border: 1px solid var(--border); border-radius: 16px; aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; font-size: 80px; }
-    .about-text h2 { margin-bottom: 16px; }
-
-    /* Stats */
-    .stats-section { background: var(--grad); }
-    .stats-section h2 { color: #fff; text-align: center; margin-bottom: 40px; }
-    .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-    .stat-card { text-align: center; padding: 32px 20px; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; background: rgba(255,255,255,0.1); backdrop-filter: blur(8px); }
-    .stat-num { font-size: 40px; font-weight: 900; color: #fff; line-height: 1; margin-bottom: 8px; }
-    .stat-label { font-size: 14px; color: rgba(255,255,255,0.75); }
-
-    /* Company cards */
-    .companies { background: var(--bg2); }
-    .companies-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
-    .company-card { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 32px; box-shadow: 0 2px 12px rgba(45,122,79,0.06); transition: var(--transition); }
-    .company-card:hover { border-color: var(--green-lt); box-shadow: var(--shadow); transform: translateY(-4px); }
-    .company-label { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--green); margin-bottom: 12px; }
-    .company-name { font-size: 18px; font-weight: 800; color: var(--text); margin-bottom: 14px; }
-    .company-card p { font-size: 14px; margin-bottom: 10px; }
-    .company-detail { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--gray); padding: 8px 0; border-top: 1px solid var(--border-lt); }
-    .company-detail strong { color: var(--text); }
-    .company-detail a { color: var(--green); transition: color var(--transition); }
-    .company-detail a:hover { color: var(--green-lt); }
-
-    /* Mission */
-    .mission { background: var(--bg3); }
-    .mission-inner { max-width: 800px; margin: 0 auto; text-align: center; }
-    .mission-inner h2 { margin-bottom: 20px; }
-    .mission-inner p { font-size: 16px; line-height: 1.9; margin-bottom: 0; }
-
-    /* CTA */
-    .cta-section { background: var(--bg2); }
-    .cta-box { background: var(--grad); border-radius: 16px; padding: 52px 40px; text-align: center; }
-    .cta-box h2 { color: #fff; margin-bottom: 14px; }
-    .cta-box p { color: rgba(255,255,255,0.8); margin-bottom: 28px; max-width: 440px; margin-left: auto; margin-right: auto; }
-    .cta-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 28px; font-size: 13px; font-weight: 700; border-radius: 30px; transition: var(--transition); }
-    .btn-white { background: #fff; color: var(--green-dk); }
+    /* ══════════════ BUTTONS ══════════════ */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 30px; font-family: var(--font-body); font-size: 14px; font-weight: 600;
+      border-radius: 999px; cursor: pointer; transition: transform var(--ease), box-shadow var(--ease), background var(--ease), color var(--ease);
+      border: 1px solid transparent;
+    }
+    .btn-primary { background: var(--ember); color: #fff; box-shadow: 0 10px 26px rgba(217,72,30,0.35); }
+    .btn-primary:hover { background: var(--ember-lt); transform: translateY(-2px); box-shadow: 0 14px 32px rgba(217,72,30,0.4); }
+    .btn-ghost { background: transparent; color: #F6FBF8; border-color: rgba(255,255,255,0.35); }
+    .btn-ghost:hover { background: rgba(255,255,255,0.1); border-color: #fff; }
+    .btn-white { background: #fff; color: var(--forest-800); }
     .btn-white:hover { background: #e8f5ee; transform: translateY(-2px); }
-    .btn-outline-white { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.5); }
+    .btn-outline-white { background: transparent; color: #fff; border-color: rgba(255,255,255,0.5); }
     .btn-outline-white:hover { background: rgba(255,255,255,0.15); border-color: #fff; }
 
-    footer { background: var(--text); padding: 40px 24px; text-align: center; border-top: 1px solid rgba(45,122,79,0.3); }
-    .footer-inner { max-width: 1200px; margin: 0 auto; }
-    .footer-logo-ph { font-size: 18px; font-weight: 800; letter-spacing: 0.12em; background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 16px; }
-    .footer-nav { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; }
-    .footer-nav a { font-size: 12px; color: rgba(255,255,255,0.45); letter-spacing: 0.06em; text-transform: uppercase; transition: color var(--transition); }
-    .footer-nav a:hover { color: var(--green-lt); }
-    .footer-copy { font-size: 12px; color: rgba(255,255,255,0.3); line-height: 1.9; }
-    .footer-copy a { color: rgba(255,255,255,0.4); transition: color var(--transition); }
-    .footer-copy a:hover { color: var(--green-lt); }
+    /* ══════════════ PAGE HERO ══════════════ */
+    .page-hero {
+      position: relative; overflow: hidden; padding-top: var(--nav-h);
+      background:
+        radial-gradient(ellipse 90% 70% at 85% 15%, rgba(30,156,116,0.28) 0%, transparent 60%),
+        linear-gradient(160deg, var(--forest-950) 0%, var(--forest-900) 55%, var(--forest-800) 100%);
+      color: #F6FBF8;
+    }
+    .page-hero-inner { max-width: 1180px; margin: 0 auto; padding: 56px 28px 70px; }
+    .breadcrumb { font-family: var(--font-mono); font-size: 12px; color: rgba(246,251,248,0.5); margin-bottom: 20px; letter-spacing: 0.02em; }
+    .breadcrumb a { color: rgba(246,251,248,0.5); transition: color var(--ease); }
+    .breadcrumb a:hover { color: #fff; }
+    .breadcrumb span { color: rgba(246,251,248,0.28); margin: 0 8px; }
+    .page-hero h1 { font-size: clamp(30px, 3.6vw, 46px); font-weight: 800; line-height: 1.5; letter-spacing: normal; margin-bottom: 14px; max-width: 620px; }
+    .page-hero .hero-sub { font-size: 16px; color: rgba(246,251,248,0.72); max-width: 520px; line-height: 1.85; }
 
-    @media (max-width: 900px) {
-      .about-grid { grid-template-columns: 1fr; }
-      .stats-grid { grid-template-columns: 1fr 1fr; }
+    /* ══════════════ SECTION COMMONS ══════════════ */
+    .section { padding: 88px 28px; }
+    .wrap { max-width: 1180px; margin: 0 auto; }
+    .section-head { max-width: 640px; margin-bottom: 48px; }
+    .section-head .eyebrow { color: var(--forest-800); margin-bottom: 16px; }
+    .section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+    h2 { font-size: clamp(26px, 3vw, 38px); font-weight: 700; letter-spacing: normal; line-height: 1.45; margin-bottom: 16px; }
+    .section-lede { font-size: 16px; color: var(--muted); line-height: 1.85; }
+
+    /* ── About brand ── */
+    .about-brand { background: var(--paper); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .about-visual {
+      background: linear-gradient(160deg, var(--paper-alt), #dce9e2); border: 1px solid var(--line-soft);
+      border-radius: var(--radius); aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center;
+    }
+    .about-visual img { max-width: 55%; }
+    .about-text p { font-size: 16px; color: var(--muted); line-height: 1.9; margin-bottom: 18px; }
+    .about-text .eyebrow { color: var(--verdant); margin-bottom: 16px; }
+
+    /* ── Stats ── */
+    .stats { background: linear-gradient(160deg, var(--verdant) 0%, var(--forest-600) 60%, var(--forest-800) 100%); position: relative; overflow: hidden; }
+    .stats::before { content:''; position:absolute; inset:0; background: radial-gradient(ellipse 60% 80% at 90% 10%, rgba(255,255,255,0.12) 0%, transparent 60%); pointer-events:none; }
+    .stats h2 { color: #fff; text-align: center; margin-bottom: 40px; position: relative; z-index: 1; }
+    .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; position: relative; z-index: 1; }
+    .stat-card {
+      text-align: center; padding: 32px 20px; border: 1px solid rgba(255,255,255,0.25); border-radius: var(--radius-sm);
+      background: rgba(255,255,255,0.1); backdrop-filter: blur(8px);
+    }
+    .stat-num { font-family: var(--font-display); font-size: 40px; font-weight: 800; color: #fff; line-height: 1; margin-bottom: 8px; }
+    .stat-label { font-size: 13.5px; color: rgba(255,255,255,0.8); }
+
+    /* ── Companies ── */
+    .companies { background: var(--paper-alt); }
+    .companies-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .company-card {
+      background: var(--card); border: 1px solid var(--line-soft); border-radius: var(--radius-sm); padding: 32px;
+      transition: border-color var(--ease), box-shadow var(--ease), transform var(--ease);
+    }
+    .company-card:hover { border-color: var(--verdant); box-shadow: var(--shadow); transform: translateY(-4px); }
+    .company-label { font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--forest-800); margin-bottom: 12px; }
+    .company-name { font-family: var(--font-display); font-size: 19px; font-weight: 700; color: var(--ink); margin-bottom: 14px; }
+    .company-card p { font-size: 14px; color: var(--muted); margin-bottom: 10px; line-height: 1.8; }
+    .company-detail { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--muted); padding: 10px 0 0; border-top: 1px solid var(--line-soft); margin-top: 6px; }
+    .company-detail strong { color: var(--ink); }
+    .company-detail a { color: var(--forest-800); transition: color var(--ease); }
+    .company-detail a:hover { color: var(--verdant); }
+
+    /* ── Mission ── */
+    .mission { background: var(--paper); }
+    .mission-inner { max-width: 800px; margin: 0 auto; text-align: center; }
+    .mission-inner .eyebrow { color: var(--verdant); margin-bottom: 16px; justify-content: center; }
+    .mission-inner p { font-size: 16px; color: var(--muted); line-height: 1.9; }
+
+    /* ── CTA ── */
+    .cta-section { background: var(--paper-alt); }
+    .cta-box {
+      background: linear-gradient(160deg, var(--forest-950) 0%, var(--forest-900) 55%, var(--forest-800) 100%);
+      border-radius: var(--radius); padding: 56px 40px; text-align: center; position: relative; overflow: hidden;
+    }
+    .cta-box::before { content:''; position:absolute; inset:0; background: radial-gradient(ellipse 60% 80% at 90% 10%, rgba(30,156,116,0.2) 0%, transparent 60%); pointer-events:none; }
+    .cta-box h2, .cta-box p { position: relative; z-index: 1; }
+    .cta-box h2 { color: #fff; margin-bottom: 14px; }
+    .cta-box p { color: rgba(246,251,248,0.72); margin-bottom: 28px; max-width: 440px; margin-left: auto; margin-right: auto; }
+    .cta-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 1; }
+
+    /* ══════════════ FOOTER ══════════════ */
+    footer { background: var(--forest-950); border-top: 1px solid rgba(255,255,255,0.08); padding: 56px 28px 40px; text-align: center; }
+    .footer-inner { max-width: 1180px; margin: 0 auto; }
+    .footer-logo { display: flex; justify-content: center; margin-bottom: 22px; }
+    .footer-nav { display: flex; gap: 26px; justify-content: center; flex-wrap: wrap; margin-bottom: 26px; }
+    .footer-nav a { font-size: 12.5px; color: rgba(246,251,248,0.5); letter-spacing: 0.03em; transition: color var(--ease); }
+    .footer-nav a:hover { color: var(--verdant-lt); }
+    .footer-social { display: flex; gap: 12px; justify-content: center; margin-bottom: 30px; }
+    .footer-social a {
+      width: 34px; height: 34px; border: 1px solid rgba(255,255,255,0.15); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 10.5px; font-weight: 700;
+      color: rgba(246,251,248,0.6); transition: border-color var(--ease), background var(--ease);
+    }
+    .footer-social a:hover { border-color: var(--verdant-lt); background: rgba(30,156,116,0.18); color: #fff; }
+    .footer-copy { font-family: var(--font-mono); font-size: 11.5px; color: rgba(246,251,248,0.35); line-height: 1.9; }
+    .footer-copy a { color: rgba(246,251,248,0.5); transition: color var(--ease); }
+    .footer-copy a:hover { color: var(--verdant-lt); }
+
+    /* ══════════════ RESPONSIVE ══════════════ */
+    @media (max-width: 980px) {
+      .about-grid { grid-template-columns: 1fr; gap: 36px; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); row-gap: 20px; }
       .companies-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 640px) {
       .nav-menu { display: none; }
-      .nav-menu.open { display: flex; flex-direction: column; position: fixed; top: var(--nav-h); left: 0; right: 0; background: rgba(255,255,255,0.98); padding: 24px; gap: 4px; border-bottom: 1px solid var(--border); }
+      .nav-menu.open {
+        display: flex; flex-direction: column; position: fixed; top: var(--nav-h); left: 0; right: 0;
+        background: rgba(6,35,28,0.98); padding: 20px 24px; gap: 2px; border-bottom: 1px solid rgba(255,255,255,0.1);
+      }
       .nav-toggle { display: flex; }
       .nav-social { display: none; }
+      .section { padding: 64px 20px; }
       .stats-grid { grid-template-columns: 1fr; }
-      .cta-box { padding: 36px 24px; }
+      .cta-box { padding: 40px 24px; }
     }
-    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
+
+    /* ── Fade-in ── */
+    .fade-in { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease, transform 0.7s ease; }
     .fade-in.visible { opacity: 1; transform: none; }
+
+    /* ── Focus ── */
+    a:focus-visible, button:focus-visible { outline: 2px solid var(--verdant-lt); outline-offset: 2px; }
   </style>
 </head>
 <body>
 
 <header role="banner">
   <nav role="navigation" aria-label="เมนูหลัก">
-    <div class="nav-logo">
-      <a href="index.html" aria-label="กลับหน้าแรก">
-        <div class="logo-placeholder">MANTA</div>
-      </a>
-    </div>
+    <a href="index.html" class="brand-logo" aria-label="กลับหน้าแรก Manta">
+      <img src="picture/web/logo-white.png" alt="Manta" width="204" height="68" loading="eager">
+    </a>
     <ul class="nav-menu" id="nav-menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="manta-performance.html">Manta Performance</a></li>
       <li><a href="mens-topics.html">Men's Topics</a></li>
       <li><a href="about.html" aria-current="page">About</a></li>
     </ul>
-    <div class="nav-social">
-      <a href="https://lin.ee/mantamen" target="_blank" rel="noopener noreferrer" aria-label="LINE"><div class="icon-ph" style="background:#06c755;color:#fff;">L</div></a>
-      <a href="https://www.facebook.com/mantamen" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><div class="icon-ph" style="background:#1877f2;color:#fff;">f</div></a>
-      <a href="https://www.tiktok.com/@mantamen" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><div class="icon-ph" style="background:#010101;color:#fff;border:1px solid #333;">T</div></a>
-      <a href="https://shopee.co.th/mantamen" target="_blank" rel="noopener noreferrer" aria-label="Shopee"><div class="icon-ph" style="background:#ee4d2d;color:#fff;">S</div></a>
+    <div class="nav-social" aria-label="ช่องทางสั่งซื้อ">
+      <a href="https://lin.ee/mantamen" target="_blank" rel="noopener noreferrer" aria-label="LINE">L</a>
+      <a href="https://www.facebook.com/mantamen" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+      <a href="https://shopee.co.th/mantamen" target="_blank" rel="noopener noreferrer" aria-label="Shopee">S</a>
     </div>
     <button class="nav-toggle" id="nav-toggle" aria-label="เปิด/ปิดเมนู" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -185,38 +333,31 @@
 
   <section class="page-hero" aria-label="เกี่ยวกับ Manta">
     <div class="page-hero-inner">
-      <nav class="breadcrumb" aria-label="breadcrumb">
+      <nav class="breadcrumb fade-in" aria-label="breadcrumb">
         <a href="index.html">Home</a><span>›</span><span>About</span>
       </nav>
-      <h1>เกี่ยวกับ Manta</h1>
-      <p class="hero-sub">รู้จักเรา — พันธกิจ ผู้ผลิต และผู้จัดจำหน่ายของ Manta</p>
-    </div>
-    <div class="hero-wave">
-      <svg viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0,0 C360,50 1080,50 1440,0 L1440,50 L0,50 Z" fill="#f8f9f8"/>
-      </svg>
+      <h1 class="fade-in">เกี่ยวกับ Manta</h1>
+      <p class="hero-sub fade-in">รู้จักเรา — พันธกิจ ผู้ผลิต และผู้จัดจำหน่ายของ Manta</p>
     </div>
   </section>
 
   <!-- About Brand -->
-  <section>
-    <div class="inner">
-      <div class="about-grid">
-        <div class="about-visual fade-in">🌿</div>
-        <div class="about-text fade-in">
-          <p class="section-eyebrow">แบรนด์ของเรา</p>
-          <h2>Manta คืออะไร?</h2>
-          <p>Manta คือแบรนด์ผลิตภัณฑ์ดูแลสุขภาพสำหรับผู้ชาย ที่เกิดจากความเชื่อว่าผู้ชายทุกคนสมควรได้รับการดูแลสุขภาพที่ดีที่สุด ด้วยผลิตภัณฑ์คุณภาพสูงที่ผ่านการวิจัยและรับรองมาตรฐาน</p>
-          <p>เราพัฒนาผลิตภัณฑ์ด้วยความใส่ใจในทุกรายละเอียด ตั้งแต่การคัดเลือกส่วนผสม กระบวนการผลิต ไปจนถึงการรับรองคุณภาพจากหน่วยงานที่เชื่อถือได้</p>
-        </div>
+  <section class="about-brand section">
+    <div class="wrap about-grid">
+      <div class="about-visual fade-in"><img src="picture/web/logo.png" alt="โลโก้ Manta" width="220" height="73" loading="lazy"></div>
+      <div class="about-text fade-in">
+        <p class="eyebrow">แบรนด์ของเรา</p>
+        <h2>Manta คืออะไร?</h2>
+        <p>Manta คือแบรนด์ผลิตภัณฑ์ดูแลสุขภาพสำหรับผู้ชาย ที่เกิดจากความเชื่อว่าผู้ชายทุกคนสมควรได้รับการดูแลสุขภาพที่ดีที่สุด ด้วยผลิตภัณฑ์คุณภาพสูงที่ผ่านการวิจัยและรับรองมาตรฐาน</p>
+        <p>เราพัฒนาผลิตภัณฑ์ด้วยความใส่ใจในทุกรายละเอียด ตั้งแต่การคัดเลือกส่วนผสม กระบวนการผลิต ไปจนถึงการรับรองคุณภาพจากหน่วยงานที่เชื่อถือได้</p>
       </div>
     </div>
   </section>
 
   <!-- Stats -->
-  <section class="stats-section">
-    <div class="inner">
-      <h2>ตัวเลขที่พูดแทนเรา</h2>
+  <section class="stats section" aria-labelledby="stats-heading">
+    <div class="wrap">
+      <h2 id="stats-heading">ตัวเลขที่พูดแทนเรา</h2>
       <div class="stats-grid">
         <div class="stat-card fade-in">
           <div class="stat-num">อย.</div>
@@ -235,11 +376,11 @@
   </section>
 
   <!-- Company Info -->
-  <section class="companies">
-    <div class="inner">
-      <div style="text-align:center;margin-bottom:40px;" class="fade-in">
-        <p class="section-eyebrow">บริษัทของเรา</p>
-        <h2>ผู้ผลิตและผู้จัดจำหน่าย</h2>
+  <section class="companies section" aria-labelledby="companies-heading">
+    <div class="wrap">
+      <div class="section-head center fade-in">
+        <p class="eyebrow">บริษัทของเรา</p>
+        <h2 id="companies-heading">ผู้ผลิตและผู้จัดจำหน่าย</h2>
       </div>
       <div class="companies-grid">
         <div class="company-card fade-in">
@@ -247,7 +388,6 @@
           <div class="company-name">บริษัท เซน ไบโอเทค จำกัด</div>
           <p>ผู้เชี่ยวชาญด้านชีวเทคโนโลยีและนวัตกรรมสุขภาพ พัฒนาผลิตภัณฑ์ภายใต้มาตรฐานการควบคุมคุณภาพระดับสูง</p>
           <div class="company-detail">
-            <span>📋</span>
             <span>เลขที่ใบอนุญาต อย.: <strong>13-1-158959-5-1531</strong></span>
           </div>
         </div>
@@ -256,7 +396,6 @@
           <div class="company-name">บริษัท เนกซ์ทีฟ โกลบอล จำกัด</div>
           <p>ผู้จัดจำหน่ายอย่างเป็นทางการของ Manta ดูแลการกระจายสินค้าและช่องทางการขายทุกแพลตฟอร์ม</p>
           <div class="company-detail">
-            <span>📞</span>
             <span>โทรศัพท์: <a href="tel:+6623990099"><strong>02-399-0099</strong></a></span>
           </div>
         </div>
@@ -265,23 +404,23 @@
   </section>
 
   <!-- Mission -->
-  <section class="mission">
-    <div class="mission-inner fade-in">
-      <p class="section-eyebrow">พันธกิจ</p>
-      <h2>เราเชื่อในสุขภาพที่ดีกว่า</h2>
+  <section class="mission section" aria-labelledby="mission-heading">
+    <div class="wrap mission-inner fade-in">
+      <p class="eyebrow">พันธกิจ</p>
+      <h2 id="mission-heading">เราเชื่อในสุขภาพที่ดีกว่า</h2>
       <p>Manta มีพันธกิจในการพัฒนาผลิตภัณฑ์สุขภาพที่ตอบโจทย์ความต้องการของผู้ชายยุคใหม่ ด้วยนวัตกรรม ความโปร่งใส และความรับผิดชอบต่อผู้บริโภคทุกคน</p>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="cta-section">
-    <div class="inner">
+  <section class="cta-section section">
+    <div class="wrap">
       <div class="cta-box fade-in">
         <h2>พร้อมเริ่มดูแลสุขภาพของคุณแล้วหรือยัง?</h2>
         <p>ค้นพบ Manta Performance ผลิตภัณฑ์ที่ออกแบบมาเพื่อคุณโดยเฉพาะ</p>
         <div class="cta-row">
-          <a href="manta-performance.html" class="btn btn-white">ดู Manta Performance</a>
-          <a href="mens-topics.html" class="btn btn-outline-white">อ่านบทความสุขภาพ</a>
+          <a href="manta-performance.html" class="btn btn-primary">ดู Manta Performance</a>
+          <a href="mens-topics.html" class="btn btn-ghost">อ่านบทความสุขภาพ</a>
         </div>
       </div>
     </div>
@@ -291,15 +430,27 @@
 
 <footer role="contentinfo">
   <div class="footer-inner">
-    <div class="footer-logo-ph">MANTA</div>
+    <div class="footer-logo">
+      <a href="index.html" class="brand-logo" aria-label="กลับหน้าแรก Manta">
+        <img src="picture/web/logo-white.png" alt="Manta" width="204" height="68" loading="lazy">
+      </a>
+    </div>
     <nav class="footer-nav" aria-label="เมนู Footer">
       <a href="index.html">Home</a>
       <a href="manta-performance.html">Manta Performance</a>
       <a href="mens-topics.html">Men's Topics</a>
       <a href="about.html">About</a>
     </nav>
+    <div class="footer-social" aria-label="Social Media">
+      <a href="https://lin.ee/mantamen" target="_blank" rel="noopener noreferrer" aria-label="LINE">L</a>
+      <a href="https://www.facebook.com/mantamen" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+      <a href="https://www.instagram.com/manta.official" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+      <a href="https://www.tiktok.com/@mantamen" target="_blank" rel="noopener noreferrer" aria-label="TikTok">T</a>
+      <a href="https://shopee.co.th/mantamen" target="_blank" rel="noopener noreferrer" aria-label="Shopee">S</a>
+    </div>
     <p class="footer-copy">
-      &copy; <span id="year"></span> Manta — บริษัท เซน ไบโอเทค จำกัด | เลขที่ อย.: 13-1-158959-5-1531<br>
+      &copy; <span id="year"></span> Manta — บริษัท เซน ไบโอเทค จำกัด<br>
+      ผู้จัดจำหน่าย: บริษัท เนกซ์ทีฟ โกลบอล จำกัด | เลขที่ อย.: 13-1-158959-5-1531<br>
       โทร: <a href="tel:+6623990099">02-399-0099</a>
     </p>
   </div>
@@ -307,11 +458,24 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
   const toggle = document.getElementById('nav-toggle');
-  const menu = document.getElementById('nav-menu');
-  toggle.addEventListener('click', function() { const open = menu.classList.toggle('open'); toggle.setAttribute('aria-expanded', open); });
-  const io = new IntersectionObserver(function(entries) { entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } }); }, { threshold: 0.1 });
-  document.querySelectorAll('.fade-in').forEach(function(el) { io.observe(el); });
+  const menu   = document.getElementById('nav-menu');
+  toggle.addEventListener('click', function() {
+    const open = menu.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+
+  (function() {
+    const els = document.querySelectorAll('.fade-in');
+    const io  = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    els.forEach(function(el) { io.observe(el); });
+  })();
 </script>
+
 </body>
 </html>
